@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Editorial New';
+  src: url('/fonts/EditorialNew-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ========================================================
+     .1VOYSY — GLOBAL DESIGN TOKENS
+     Swiss Brutalist Editorial Web Architecture
+     LIGHT MONOLITH → DARK MONOLITH → DAYLIGHT RETURN → NIGHT MONOLITH
+     ======================================================== */
+
+  /* --- Section 02: Exact Palette Tokens --- */
+  --canvas-white: #FFFFFF;
+  --canvas-alabaster: #FAF9F6;
+  --graphite: #1E1E2F;
+  --ink: #1A1A1A;
+  --slate: #65667A;
+  --dark: #0E1116;
+  --black: #000000;
+  --cream: #FAF9F6;
+  --dark-muted: #8E929B;
+  --border-light: rgba(30, 30, 47, 0.12);
+  --border-dark: rgba(255, 255, 255, 0.15);
+
+  /* --- Environmental State Progression --- */
+  --env-hero-pedestal: #FFFFFF;
+  --env-about-bg: #FFFFFF;
+  --env-dark-monolith: #0E1116;
+  --env-daylight-sky: #A7C5EB;
+  --env-night-monolith: #0E1116;
+
+  /* --- Accent Highlights --- */
+  --accent-lime: #CEF023;
+  --accent-lime-soft: #F4FACF;
+  --accent-blue: #1D5BFF;
+
+  /* --- Section 02: Typography Tokens --- */
+  --font-serif: 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif;
+  --font-editorial: 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Space Mono', 'Courier New', monospace;
+  --font-display: 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif;
+
+  /* Optical Typographic Metrics */
+  --tracking-editorial: -0.025em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-mono: 0.12em;
+  --tracking-wide: 0.16em;
+
+  /* --- Section 03: 8px Spatial Spacing System --- */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-88: 88px;
+  --space-120: 120px;
+
+  /* Fluid Values */
+  --page-padding: clamp(16px, 3vw, 48px);
+  --grid-gap: clamp(12px, 1.5vw, 24px);
+  --container-max: 1840px;
+  --nav-height: 72px;
+
+  /* --- Section 04: Global Swiss Grid Columns --- */
+  --grid-columns: 12;
+
+  /* --- Animation Timings & Physics --- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 0.2s;
+  --duration-normal: 0.35s;
+  --duration-slow: 0.6s;
+
+  /* --- Backwards Compatibility Tokens --- */
+  --bg-primary: #0D1611;
+  --textile-green: #1B2C21;
+  --textile-black: #0B0F0C;
+  --textile-cream: #EDE8DC;
+  --textile-cream-pure: #FFFFFF;
+  --border-editorial: rgba(245, 242, 235, 0.22);
+  --border-editorial-subtle: rgba(245, 242, 235, 0.12);
+  --border-editorial-strong: rgba(245, 242, 235, 0.35);
+  --text-dark-primary: #FFFFFF;
+  --text-dark-muted: #D8D2C5;
+  --text-dark-faint: #A6A094;
+  --text-shadow-editorial: 0 2px 8px rgba(0, 0, 0, 0.88), 0 4px 20px rgba(0, 0, 0, 0.65);
+  --text-shadow-subtle: 0 1px 4px rgba(0, 0, 0, 0.85);
+  --bg-card: #ECE6DA;
+  --bg-card-alt: #FFFFFF;
+  --text-primary: #111111;
+  --text-muted: #5C5C5C;
+  --text-faint: #8E8E8E;
+  --border-light-legacy: rgba(17, 17, 17, 0.12);
+  --border-medium: rgba(17, 17, 17, 0.22);
+  --border-solid: #111111;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+}

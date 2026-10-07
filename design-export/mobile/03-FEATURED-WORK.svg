@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="715" viewBox="0 0 390 715" role="img" aria-label="03 — FEATURED WORK (Mobile)">
+  <title>03 — FEATURED WORK (Mobile 390x715)</title>
+  
+  <rect id="work-bg" width="390" height="715" fill="#FFFFFF"/>
+
+  <g id="work-header">
+    <text id="work-section-label" x="16" y="50" fill="#111111" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">Featured work</text>
+  </g>
+
+  <!-- Mobile Project Rows -->
+  <g id="project-01-auezov-campus">
+    <line x1="16" y1="104" x2="374" y2="104" stroke="#111111" stroke-width="1"/>
+    <text x="195" y="160" text-anchor="middle" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="32.8">Auezov Campus</text>
+  </g>
+
+  <g id="project-02-noer-coffee">
+    <line x1="16" y1="196" x2="374" y2="196" stroke="#111111" stroke-width="1"/>
+    <text x="195" y="252" text-anchor="middle" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="32.8">Noer Coffee</text>
+  </g>
+
+  <g id="project-03-reform">
+    <line x1="16" y1="288" x2="374" y2="288" stroke="#111111" stroke-width="1"/>
+    <text x="195" y="344" text-anchor="middle" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="32.8">Re-form</text>
+  </g>
+
+  <g id="project-04-finguard">
+    <line x1="16" y1="380" x2="374" y2="380" stroke="#111111" stroke-width="1"/>
+    <text x="195" y="436" text-anchor="middle" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="32.8">FinGuard</text>
+  </g>
+
+  <g id="project-05-john-gym">
+    <line x1="16" y1="472" x2="374" y2="472" stroke="#111111" stroke-width="1"/>
+    <text x="195" y="528" text-anchor="middle" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="32.8">John Gym</text>
+  </g>
+
+  <g id="project-06-all-work">
+    <line x1="16" y1="564" x2="374" y2="564" stroke="#111111" stroke-width="1"/>
+    <line x1="16" y1="656" x2="374" y2="656" stroke="#111111" stroke-width="1"/>
+    <g transform="translate(195, 620)">
+      <path d="M12 2C12.45 2 12.8 2.35 12.8 2.8V8.25L16.65 4.4C16.96 4.09 17.47 4.09 17.78 4.4C18.09 4.71 18.09 5.22 17.78 5.53L13.93 9.38H19.38C19.82 9.38 20.18 9.74 20.18 10.18C20.18 10.62 19.82 10.98 19.38 10.98H13.93L17.78 14.83C18.09 15.14 18.09 15.65 17.78 15.96C17.47 16.27 16.96 16.27 16.65 15.96L12.8 12.11V17.56C12.8 18 12.45 18.36 12 18.36C11.55 18.36 11.2 18 11.2 17.56V12.11L7.35 15.96C7.04 16.27 6.53 16.27 6.22 15.96C5.91 15.65 5.91 15.14 6.22 14.83L10.07 10.98H4.62C4.18 10.98 3.82 10.62 3.82 10.18C3.82 9.74 4.18 9.38 4.62 9.38H10.07L6.22 5.53C5.91 5.22 5.91 4.71 6.22 4.4C6.53 4.09 7.04 4.09 7.35 4.4L11.2 8.25V2.8C11.2 2.35 11.55 2 12 2Z" fill="#111111" transform="translate(-85, -16) scale(0.9)"/>
+      <text x="0" y="0" text-anchor="middle" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="32.8">All Work</text>
+      <path d="M12 2C12.45 2 12.8 2.35 12.8 2.8V8.25L16.65 4.4C16.96 4.09 17.47 4.09 17.78 4.4C18.09 4.71 18.09 5.22 17.78 5.53L13.93 9.38H19.38C19.82 9.38 20.18 9.74 20.18 10.18C20.18 10.62 19.82 10.98 19.38 10.98H13.93L17.78 14.83C18.09 15.14 18.09 15.65 17.78 15.96C17.47 16.27 16.96 16.27 16.65 15.96L12.8 12.11V17.56C12.8 18 12.45 18.36 12 18.36C11.55 18.36 11.2 18 11.2 17.56V12.11L7.35 15.96C7.04 16.27 6.53 16.27 6.22 15.96C5.91 15.65 5.91 15.14 6.22 14.83L10.07 10.98H4.62C4.18 10.98 3.82 10.62 3.82 10.18C3.82 9.74 4.18 9.38 4.62 9.38H10.07L6.22 5.53C5.91 5.22 5.91 4.71 6.22 4.4C6.53 4.09 7.04 4.09 7.35 4.4L11.2 8.25V2.8C11.2 2.35 11.55 2 12 2Z" fill="#111111" transform="translate(70, -16) scale(0.9)"/>
+    </g>
+  </g>
+</svg>

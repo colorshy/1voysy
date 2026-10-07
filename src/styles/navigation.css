@@ -1,0 +1,227 @@
+/* ========================================================
+   00 — SITE NAVIGATION (MINIMAL EDITORIAL TEXTILE HEADER)
+   ======================================================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: clamp(24px, 3.5vw, 40px) clamp(24px, 4vw, 56px);
+  background: transparent;
+  border-bottom: none;
+  z-index: 1000;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Upper-Left Brand — shifted slightly to the right for refined editorial whitespace */
+.brand-title {
+  margin-left: clamp(20px, 3.5vw, 64px);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+  color: var(--textile-cream-pure, #F5F2EB);
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(10, 28, 18, 0.7), 0 1px 3px rgba(10, 28, 18, 0.9);
+  pointer-events: auto;
+  user-select: none;
+  display: inline-block;
+  position: relative;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+.brand-letters {
+  display: inline-flex;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.brand-char {
+  display: inline-block;
+  will-change: opacity, transform;
+  position: relative;
+}
+
+.brand-fiber-canvas {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Upper-Right Minimal Hamburger Menu */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 7px;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 1002;
+}
+
+.menu-icon-bar {
+  display: block;
+  height: 2px;
+  background-color: var(--textile-cream-pure, #F5F2EB);
+  box-shadow: 0 2px 8px rgba(10, 28, 18, 0.7);
+  border-radius: 2px;
+  transform-origin: center;
+  transition: transform var(--duration-normal) var(--ease-out),
+              width var(--duration-normal) var(--ease-out),
+              background-color var(--duration-fast) var(--ease-out);
+}
+
+.menu-icon-bar:nth-child(1) {
+  width: 28px;
+}
+
+.menu-icon-bar:nth-child(2) {
+  width: 19px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menu-toggle:hover .menu-icon-bar:nth-child(1) {
+    transform: translateX(-3px);
+  }
+  .menu-toggle:hover .menu-icon-bar:nth-child(2) {
+    width: 28px;
+    transform: translateX(0);
+  }
+}
+
+/* Open / Active State for Hamburger */
+.menu-toggle.is-open .menu-icon-bar:nth-child(1) {
+  width: 24px;
+  transform: translateY(4.5px) rotate(45deg);
+}
+
+.menu-toggle.is-open .menu-icon-bar:nth-child(2) {
+  width: 24px;
+  transform: translateY(-4.5px) rotate(-45deg);
+}
+
+/* Minimal Editorial Navigation Drawer */
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(400px, 86vw);
+  height: 100vh;
+  height: 100dvh;
+  background-color: rgba(20, 42, 30, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-left: 1px solid rgba(245, 242, 235, 0.16);
+  box-shadow: -16px 0 50px rgba(0, 0, 0, 0.45);
+  padding: clamp(36px, 6vw, 56px) clamp(28px, 5vw, 44px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1001;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform var(--duration-slow) var(--ease-out),
+              opacity var(--duration-slow) var(--ease-out);
+}
+
+.nav-drawer.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(245, 242, 235, 0.15);
+}
+
+.drawer-brand {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  color: var(--textile-cream-pure, #F5F2EB);
+  text-transform: uppercase;
+}
+
+.drawer-close-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(245, 242, 235, 0.7);
+  padding: 6px 10px;
+  border: 1px solid rgba(245, 242, 235, 0.2);
+  transition: color var(--duration-fast) var(--ease-out),
+              border-color var(--duration-fast) var(--ease-out);
+}
+
+.drawer-close-btn:hover {
+  color: var(--textile-cream-pure, #F5F2EB);
+  border-color: rgba(245, 242, 235, 0.6);
+}
+
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 3vh, 28px);
+  margin: auto 0;
+}
+
+.drawer-link {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+  text-transform: uppercase;
+  color: var(--textile-cream-pure, #F5F2EB);
+  letter-spacing: -0.01em;
+  transition: transform var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out);
+}
+
+.drawer-link:hover {
+  transform: translateX(8px);
+  color: #FFFFFF;
+}
+
+.drawer-num {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  color: rgba(245, 242, 235, 0.5);
+}
+
+.drawer-footer {
+  padding-top: 24px;
+  border-top: 1px solid rgba(245, 242, 235, 0.15);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: rgba(245, 242, 235, 0.6);
+}

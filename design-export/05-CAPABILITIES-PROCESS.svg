@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1213" viewBox="0 0 1920 1213" role="img" aria-label="05 — CAPABILITIES &amp; PROCESS (Desktop)">
+  <title>05 — CAPABILITIES &amp; PROCESS (Desktop 1920x1213)</title>
+  
+  <rect id="capabilities-bg" width="1920" height="1213" fill="#0E1116"/>
+
+  <!-- Part A: Capabilities Header -->
+  <g id="capabilities-header">
+    <text id="capabilities-tag" x="88" y="133" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">[ 05 // CAPABILITIES &amp; PROCESS ]</text>
+    <g id="capabilities-title" fill="#FFFFFF" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="52" font-weight="400">
+      <text x="88" y="210">Capabilities</text>
+      <text x="88" y="267">&amp; Process</text>
+    </g>
+    <text id="capabilities-meta" x="88" y="325" fill="rgba(255, 255, 255, 0.4)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">DIGITAL STRATEGY • ARCHITECTURAL WEB • CRAFT</text>
+  </g>
+
+  <!-- Part B: Central Sculpture &amp; Word Cloud -->
+  <g id="capabilities-sculpture-composition">
+    <g id="sculpture-word-cloud" fill="rgba(255, 255, 255, 0.28)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="14">
+      <text x="785" y="265">CONCRETE | FRACTAL | CONCRETE</text>
+      <text x="725" y="295">FRACTAL | SCULPTURE | FRACTAL | SCULPTURE</text>
+      <text x="705" y="325">SCULPTURE | ARCHITECTURAL | SCULPTED DESIGN ↵</text>
+      <text x="665" y="355">ARCHITECTURAL | DEVELOPMENT | ARCHITECTURAL DEVELOPMENT</text>
+    </g>
+
+    <g id="sculpture-stage">
+      <image id="sculpture-img" href="../public/assets/reference/capabalities-skills-work-img-0.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-0.png" x="810" y="150" width="300" height="323" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+  </g>
+
+  <!-- Part C: Right-side Core Disciplines Panel -->
+  <g id="capabilities-summary-col">
+    <text id="panel-badge" x="1378" y="198" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ CORE DISCIPLINES ]</text>
+    
+    <g id="panel-text" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600">
+      <text x="1378" y="245">DIGITAL STRATEGY,</text>
+      <text x="1378" y="271">DESIGN ENGINEERING,</text>
+      <text x="1378" y="297">WEB DEVELOPMENT</text>
+      <text x="1378" y="323">WORKFLOW, INTERFACE</text>
+      <text x="1378" y="349">DEVELOPMENT, AND</text>
+      <text x="1378" y="375">BRAND SYSTEMS.</text>
+    </g>
+
+    <g id="explore-stack-action">
+      <rect id="explore-btn-border" x="1378" y="421" width="178" height="40" rx="3" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1"/>
+      <text id="explore-btn-text" x="1403" y="446" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Explore Stack →</text>
+    </g>
+  </g>
+
+  <!-- Mid-Section Divider -->
+  <line id="capabilities-divider" x1="88" y1="597" x2="1832" y2="597" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+
+  <!-- Part D: Additional Work / Archive Area -->
+  <g id="additional-work-section">
+    <g id="additional-work-header">
+      <text id="additional-tag" x="88" y="691" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">[ ARCHIVE // SELECTION ]</text>
+      <text id="additional-title" x="317" y="691" fill="#FFFFFF" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="42" font-weight="500">Additional Work</text>
+      <text id="additional-count" x="1479" y="691" fill="rgba(255, 255, 255, 0.4)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 07 CURATED RESEARCH &amp; CLIENT ARTIFACTS ]</text>
+    </g>
+
+    <!-- Gallery Cards Filmstrip (All 7 Cards) -->
+    <g id="additional-filmstrip-cards">
+      <!-- Card 01 -->
+      <g id="gallery-card-01">
+        <rect id="card-01-border" x="88" y="751" width="310" height="203" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+        <image id="card-01-img" href="../public/assets/reference/capabalities-skills-work-img-1.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-1.png" x="89" y="752" width="308" height="201" preserveAspectRatio="xMidYMid slice"/>
+        <text id="card-01-num" x="88" y="980" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 01 ]</text>
+        <text id="card-01-title" x="141" y="980" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Black Foil Monograph</text>
+      </g>
+
+      <!-- Card 02 -->
+      <g id="gallery-card-02">
+        <rect id="card-02-border" x="422" y="751" width="310" height="203" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+        <image id="card-02-img" href="../public/assets/reference/capabalities-skills-work-img-2.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-2.png" x="423" y="752" width="308" height="201" preserveAspectRatio="xMidYMid slice"/>
+        <text id="card-02-num" x="422" y="980" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 02 ]</text>
+        <text id="card-02-title" x="475" y="980" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Editorial Experiment</text>
+      </g>
+
+      <!-- Card 03 -->
+      <g id="gallery-card-03">
+        <rect id="card-03-border" x="756" y="751" width="310" height="203" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+        <image id="card-03-img" href="../public/assets/reference/capabalities-skills-work-img-3.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-3.png" x="757" y="752" width="308" height="201" preserveAspectRatio="xMidYMid slice"/>
+        <text id="card-03-num" x="756" y="980" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 03 ]</text>
+        <text id="card-03-title" x="809" y="980" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Kernel &amp; Shader Logic</text>
+      </g>
+
+      <!-- Card 04 (With Video Play Overlay) -->
+      <g id="gallery-card-04">
+        <rect id="card-04-border" x="1090" y="751" width="310" height="203" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+        <image id="card-04-img" href="../public/assets/reference/capabalities-skills-work-img-4.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-4.png" x="1091" y="752" width="308" height="201" preserveAspectRatio="xMidYMid slice"/>
+        <!-- Play Icon Overlay -->
+        <circle cx="1245" cy="853" r="22" fill="rgba(0, 0, 0, 0.6)"/>
+        <polygon points="1241,847 1253,853 1241,859" fill="#FFFFFF"/>
+        <text id="card-04-num" x="1090" y="980" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 04 ]</text>
+        <text id="card-04-title" x="1143" y="980" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Motion Reel • Spatial Film</text>
+      </g>
+
+      <!-- Card 05 -->
+      <g id="gallery-card-05">
+        <rect id="card-05-border" x="1424" y="751" width="310" height="203" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+        <image id="card-05-img" href="../public/assets/reference/capabalities-skills-work-img-5.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-5.png" x="1425" y="752" width="308" height="201" preserveAspectRatio="xMidYMid slice"/>
+        <text id="card-05-num" x="1424" y="980" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 05 ]</text>
+        <text id="card-05-title" x="1477" y="980" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Concrete Monolith</text>
+      </g>
+
+      <!-- Card 06 -->
+      <g id="gallery-card-06">
+        <rect id="card-06-border" x="1758" y="751" width="310" height="203" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+        <image id="card-06-img" href="../public/assets/reference/capabalities-skills-work-img-6.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-6.png" x="1759" y="752" width="308" height="201" preserveAspectRatio="xMidYMid slice"/>
+        <text id="card-06-num" x="1758" y="980" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 06 ]</text>
+        <text id="card-06-title" x="1811" y="980" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Spatial Multi-Screen</text>
+      </g>
+
+      <!-- Card 07 -->
+      <g id="gallery-card-07">
+        <rect id="card-07-border" x="2092" y="751" width="310" height="203" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+        <image id="card-07-img" href="../public/assets/reference/capabalities-skills-work-img-7.png" xlink:href="../public/assets/reference/capabalities-skills-work-img-7.png" x="2093" y="752" width="308" height="201" preserveAspectRatio="xMidYMid slice"/>
+        <text id="card-07-num" x="2092" y="980" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ 07 ]</text>
+        <text id="card-07-title" x="2145" y="980" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Light &amp; Concrete Relief</text>
+      </g>
+    </g>
+
+    <!-- Carousel Pagination Controls -->
+    <g id="additional-controls" fill="rgba(255, 255, 255, 0.85)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">
+      <text id="btn-prev" x="800" y="1068">[ &lt; ]</text>
+      <text id="counter" x="890" y="1068">[ 01 ] / [ 07 ]</text>
+      <text id="btn-next" x="1050" y="1068">[ &gt; ]</text>
+    </g>
+  </g>
+</svg>

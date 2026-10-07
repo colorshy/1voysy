@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="01 — HERO (Desktop)">
+  <title>01 — HERO (Desktop 1920x1080)</title>
+  <defs>
+    <linearGradient id="hero-sky-vignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="85%" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect id="hero-bg" width="1920" height="1080" fill="#FFFFFF"/>
+
+  <!-- Upper Visual Frame: Landscape -->
+  <g id="hero-visual-frame">
+    <image id="hero-landscape-img" href="../public/assets/hero-textile-landscape-2k.jpg" xlink:href="../public/assets/hero-textile-landscape-2k.jpg" x="0" y="-86" width="1920" height="993" preserveAspectRatio="xMidYMid slice"/>
+    <rect id="hero-vignette" x="0" y="0" width="1920" height="907" fill="url(#hero-sky-vignette)"/>
+
+    <!-- Metadata Badge Resting on Pedestal -->
+    <g id="hero-tag-badge">
+      <rect id="badge-bg" x="44" y="880" width="145" height="28" rx="3" fill="#FFFFFF"/>
+      <text id="badge-text" x="60" y="899" fill="#1E1E2F" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13" font-weight="700" letter-spacing="1.82">[ UI / DEV ]</text>
+    </g>
+  </g>
+
+  <!-- Global Sticky Editorial Navigation -->
+  <g id="hero-header">
+    <rect id="header-bg" x="0" y="0" width="1920" height="59" fill="#FFFFFF"/>
+    
+    <g id="header-brand">
+      <text id="brand-text" x="44" y="42" fill="#111111" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.85">.1VOYSY</text>
+    </g>
+
+    <g id="header-nav-links">
+      <text id="nav-work" x="1341" y="38" fill="rgba(17, 17, 17, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13" font-weight="500" letter-spacing="1.04">selected work</text>
+      <text id="nav-sounds" x="1488" y="38" fill="rgba(17, 17, 17, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13" font-weight="500" letter-spacing="1.04">sounds</text>
+      <text id="nav-archive" x="1573" y="38" fill="rgba(17, 17, 17, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13" font-weight="500" letter-spacing="1.04">archive</text>
+      <text id="nav-about" x="1667" y="38" fill="rgba(17, 17, 17, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13" font-weight="500" letter-spacing="1.04">about</text>
+      <text id="nav-cta" x="1743" y="38" fill="#111111" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13" font-weight="600" letter-spacing="1.04">let’s connect →</text>
+    </g>
+  </g>
+
+  <!-- Lower White Typographic Pedestal -->
+  <g id="hero-pedestal">
+    <rect id="pedestal-bg" x="0" y="907" width="1920" height="173" fill="#FFFFFF"/>
+    
+    <g id="hero-headline">
+      <text id="headline-creative-developer" x="44" y="1025" fill="#1E1E2F" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="126" font-weight="500" letter-spacing="-3.15">Creative Developer</text>
+      
+      <g id="hero-year-lockup" transform="translate(1043, 932)">
+        <!-- Asterisk Symbol -->
+        <g id="hero-asterisk" fill="#1E1E2F" transform="scale(2.58)">
+          <rect x="18" y="2" width="4" height="36" rx="0.5" />
+          <rect x="2" y="18" width="36" height="4" rx="0.5" />
+          <rect x="18" y="2" width="4" height="36" rx="0.5" transform="rotate(45 20 20)" />
+          <rect x="18" y="2" width="4" height="36" rx="0.5" transform="rotate(-45 20 20)" />
+        </g>
+        <!-- 2026 -->
+        <text id="headline-year" x="120" y="93" fill="#1E1E2F" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="126" font-weight="500" letter-spacing="-3.15">2026</text>
+      </g>
+    </g>
+  </g>
+</svg>

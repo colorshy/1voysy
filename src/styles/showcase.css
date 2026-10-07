@@ -1,0 +1,290 @@
+/* ========================================================
+   04 — SELECTED WORK / PROJECTS
+   Minimal Editorial Visual Archive
+   Pure editorial composition on warm off-white canvas
+   Subtle spatial depth & horizontal inertia
+   ======================================================== */
+
+.showcase-section {
+  background-color: var(--bg-primary);
+  border-bottom: 2px solid var(--border-solid);
+  padding: clamp(64px, 8vw, 112px) 0 clamp(48px, 6vw, 80px) 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.showcase-inner-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Minimal Editorial Header */
+.showcase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1.5px solid var(--border-solid);
+  padding: 0 clamp(20px, 4vw, 48px) 24px;
+  margin-bottom: clamp(32px, 5vw, 56px);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.showcase-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.showcase-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.8rem, 10vw, 8rem);
+  line-height: 0.86;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.showcase-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.showcase-drag-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  border: 1px solid var(--border-medium);
+  padding: 6px 14px;
+  background-color: rgba(20, 20, 20, 0.03);
+  user-select: none;
+}
+
+.showcase-drag-hint .drag-arrow {
+  color: var(--accent-orange);
+  animation: pulse-arrow 1.6s infinite ease-in-out;
+}
+
+@keyframes pulse-arrow {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+/* Horizontal Interactive Viewport (No Dark Container Frame) */
+.showcase-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  padding: 24px 0 36px 0;
+  outline: none;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.showcase-viewport:active,
+.showcase-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+/* Horizontal Track */
+.showcase-track {
+  display: flex;
+  gap: clamp(32px, 5vw, 64px);
+  width: max-content;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Individual Project Panel */
+.showcase-panel {
+  flex: 0 0 clamp(320px, 34vw, 480px);
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Spatial Depth Wrapper (Transformed by showcase.js RAF loop) */
+.panel-visual-wrap {
+  width: 100%;
+  perspective: 1200px;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  transition: transform 0.12s ease-out, opacity 0.12s ease-out;
+}
+
+/* Media Stage */
+.panel-media-stage {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #0E0E0E;
+  border: 1px solid var(--border-solid);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+.panel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.97);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .showcase-panel:hover .panel-img {
+    transform: scale(1.035);
+    filter: brightness(1.02);
+  }
+}
+
+/* Visual stages for SVG / Kinetic Typography */
+.archi-stage,
+.kinetic-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D0D0D;
+}
+
+.kinetic-stage .kinetic-visual-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+/* Action Overlay Button */
+.panel-action-overlay {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  background-color: var(--text-primary);
+  color: #FFFFFF;
+  border: 1px solid var(--border-solid);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out);
+  z-index: 2;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .panel-action-overlay:hover {
+    background-color: var(--accent-orange);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+  }
+}
+
+.showcase-panel[data-project="noir"] .panel-action-overlay:hover {
+  background-color: var(--accent-pink);
+}
+
+.showcase-panel[data-project="architextiles"] .panel-action-overlay:hover {
+  background-color: var(--accent-blue);
+}
+
+.showcase-panel[data-project="variabletype"] .panel-action-overlay:hover {
+  background-color: #8FA80A;
+}
+
+/* Minimal Editorial Caption */
+.panel-caption {
+  padding: 16px 2px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: opacity 0.15s ease-out;
+}
+
+.panel-caption-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.panel-title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Minimal Editorial Bottom Label */
+.showcase-bottom-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px clamp(20px, 4vw, 48px) 0;
+  margin-top: 16px;
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 860px) {
+  .showcase-panel {
+    flex: 0 0 clamp(290px, 70vw, 380px);
+  }
+}
+
+@media (max-width: 640px) {
+  .showcase-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .showcase-panel {
+    flex: 0 0 clamp(270px, 80vw, 340px);
+  }
+
+  .showcase-bottom-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

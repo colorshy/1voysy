@@ -1,0 +1,75 @@
+/* ========================================================
+   SWISS EDITORIAL GRID SYSTEM
+   12-column Desktop | 8-column Tablet | 4-column Mobile
+   Mathematical rhythm across all sections
+   ======================================================== */
+
+.swiss-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: var(--grid-gap);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Fluid Page Container */
+.page-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  box-sizing: border-box;
+}
+
+/* Grid Column Spans */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+/* Tablet: 8-column layout */
+@media (max-width: 1024px) {
+  :root {
+    --grid-columns: 8;
+  }
+  .swiss-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .col-12, .col-11, .col-10, .col-9, .col-8 {
+    grid-column: span 8;
+  }
+  .col-7, .col-6, .col-5 {
+    grid-column: span 4;
+  }
+  .col-4, .col-3 {
+    grid-column: span 4;
+  }
+}
+
+/* Mobile: 4-column layout */
+@media (max-width: 640px) {
+  :root {
+    --grid-columns: 4;
+  }
+  .swiss-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .col-12, .col-11, .col-10, .col-9, .col-8,
+  .col-7, .col-6, .col-5, .col-4, .col-3 {
+    grid-column: span 4;
+  }
+  .col-2 {
+    grid-column: span 2;
+  }
+}

@@ -1,0 +1,152 @@
+/* ========================================================
+   06 — WHAT I DO SECTION
+   Commercially structured service offerings distinct from Capabilities
+   ======================================================== */
+
+.what-i-do-section {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(245, 242, 235, 0.15);
+  position: relative;
+}
+
+.what-i-do-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(245, 242, 235, 0.15);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+}
+
+.what-i-do-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 8vw, 6.5rem);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--textile-cream-pure, #F5F2EB);
+  text-shadow: 0 2px 14px rgba(10, 28, 18, 0.9);
+}
+
+.what-i-do-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245, 242, 235, 0.75);
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 2fr 1.2fr;
+  align-items: baseline;
+  gap: 28px;
+  padding: clamp(28px, 4vw, 44px) 0;
+  border-bottom: 1px solid rgba(245, 242, 235, 0.12);
+  transition: background-color var(--duration-fast) var(--ease-out),
+              padding-left var(--duration-fast) var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .service-row:hover {
+    background-color: rgba(245, 242, 235, 0.05);
+    padding-left: 14px;
+  }
+}
+
+.service-num {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--accent-lime, #CEF023);
+  text-shadow: 0 0 10px rgba(206, 240, 35, 0.5);
+}
+
+.service-name-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.service-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--textile-cream-pure, #F5F2EB);
+  text-shadow: 0 1px 8px rgba(10, 28, 18, 0.85);
+}
+
+.service-focus {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(245, 242, 235, 0.65);
+}
+
+.service-desc {
+  font-family: var(--font-sans);
+  font-size: clamp(0.875rem, 1.05vw, 0.975rem);
+  line-height: 1.55;
+  color: rgba(245, 242, 235, 0.86);
+  text-shadow: 0 1px 4px rgba(10, 28, 18, 0.8);
+}
+
+.service-deliverables {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.deliverable-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  background: rgba(245, 242, 235, 0.08);
+  border: 1px solid rgba(245, 242, 235, 0.16);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(245, 242, 235, 0.8);
+  white-space: nowrap;
+}
+
+@media (max-width: 960px) {
+  .service-row {
+    grid-template-columns: 50px 1.4fr 1fr;
+    gap: 16px;
+  }
+
+  .service-deliverables {
+    grid-column: 2 / 4;
+  }
+}
+
+@media (max-width: 680px) {
+  .what-i-do-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .service-row {
+    grid-template-columns: 40px 1fr;
+    gap: 12px;
+  }
+
+  .service-desc {
+    grid-column: 2 / 3;
+  }
+
+  .service-deliverables {
+    grid-column: 2 / 3;
+  }
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1827" viewBox="0 0 1920 1827" role="img" aria-label="03 — FEATURED WORK (Desktop)">
+  <title>03 — FEATURED WORK (Desktop 1920x1827)</title>
+  
+  <rect id="work-bg" width="1920" height="1827" fill="#FFFFFF"/>
+
+  <!-- Section Header -->
+  <g id="work-header">
+    <text id="work-section-label" x="88" y="118" fill="#111111" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="500">Featured work</text>
+  </g>
+
+  <!-- 01: Auezov Campus (Center Split Preview) -->
+  <g id="project-01-auezov-campus">
+    <line id="divider-01" x1="88" y1="163" x2="1832" y2="163" stroke="#111111" stroke-width="1"/>
+    
+    <g id="row-01-title" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="142" font-weight="400">
+      <text x="503" y="335">Auezov</text>
+      <!-- Center Image Preview -->
+      <image id="preview-01-img" href="../public/assets/projects/wolverine.jpg" xlink:href="../public/assets/projects/wolverine.jpg" x="820" y="240" width="238" height="148" preserveAspectRatio="xMidYMid slice"/>
+      <text x="1090" y="335">Campus</text>
+    </g>
+  </g>
+
+  <!-- 02: Noer Coffee (Right Preview) -->
+  <g id="project-02-noer-coffee">
+    <line id="divider-02" x1="88" y1="424" x2="1832" y2="424" stroke="#111111" stroke-width="1"/>
+    
+    <g id="row-02-title" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="142" font-weight="400">
+      <text x="625" y="596">Noer Coffee</text>
+      <!-- Right Image Preview -->
+      <image id="preview-02-img" href="../public/assets/project-noir.webp" xlink:href="../public/assets/project-noir.webp" x="1334" y="501" width="238" height="148" preserveAspectRatio="xMidYMid slice"/>
+    </g>
+  </g>
+
+  <!-- 03: Re-form (Left Preview) -->
+  <g id="project-03-reform">
+    <line id="divider-03" x1="88" y1="685" x2="1832" y2="685" stroke="#111111" stroke-width="1"/>
+    
+    <g id="row-03-title" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="142" font-weight="400">
+      <!-- Left Image Preview -->
+      <image id="preview-03-img" href="../public/assets/projects/lightship.jpg" xlink:href="../public/assets/projects/lightship.jpg" x="439" y="762" width="238" height="148" preserveAspectRatio="xMidYMid slice"/>
+      <text x="716" y="857">Re-form</text>
+    </g>
+  </g>
+
+  <!-- 04: FinGuard (Center Split Preview) -->
+  <g id="project-04-finguard">
+    <line id="divider-04" x1="88" y1="946" x2="1832" y2="946" stroke="#111111" stroke-width="1"/>
+    
+    <g id="row-04-title" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="142" font-weight="400">
+      <text x="684" y="1118">Fin</text>
+      <!-- Center Image Preview -->
+      <image id="preview-04-img" href="../public/assets/projects/drake-hotel.jpg" xlink:href="../public/assets/projects/drake-hotel.jpg" x="752" y="1023" width="238" height="148" preserveAspectRatio="xMidYMid slice"/>
+      <text x="1022" y="1118">Guard</text>
+    </g>
+  </g>
+
+  <!-- 05: John Gym (Left Preview) -->
+  <g id="project-05-john-gym">
+    <line id="divider-05" x1="88" y1="1207" x2="1832" y2="1207" stroke="#111111" stroke-width="1"/>
+    
+    <g id="row-05-title" fill="#111111" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="142" font-weight="400">
+      <!-- Left Image Preview -->
+      <image id="preview-05-img" href="../public/assets/projects/dulcedo.jpg" xlink:href="../public/assets/projects/dulcedo.jpg" x="395" y="1284" width="238" height="148" preserveAspectRatio="xMidYMid slice"/>
+      <text x="672" y="1379">John Gym</text>
+    </g>
+  </g>
+
+  <!-- 06: All Work (Right Preview with Asterisks) -->
+  <g id="project-06-all-work">
+    <line id="divider-06" x1="88" y1="1468" x2="1832" y2="1468" stroke="#111111" stroke-width="1"/>
+    <line id="divider-bottom" x1="88" y1="1730" x2="1832" y2="1730" stroke="#111111" stroke-width="1"/>
+    
+    <g id="row-06-title" fill="#111111">
+      <!-- Left Asterisk -->
+      <path d="M12 2C12.45 2 12.8 2.35 12.8 2.8V8.25L16.65 4.4C16.96 4.09 17.47 4.09 17.78 4.4C18.09 4.71 18.09 5.22 17.78 5.53L13.93 9.38H19.38C19.82 9.38 20.18 9.74 20.18 10.18C20.18 10.62 19.82 10.98 19.38 10.98H13.93L17.78 14.83C18.09 15.14 18.09 15.65 17.78 15.96C17.47 16.27 16.96 16.27 16.65 15.96L12.8 12.11V17.56C12.8 18 12.45 18.36 12 18.36C11.55 18.36 11.2 18 11.2 17.56V12.11L7.35 15.96C7.04 16.27 6.53 16.27 6.22 15.96C5.91 15.65 5.91 15.14 6.22 14.83L10.07 10.98H4.62C4.18 10.98 3.82 10.62 3.82 10.18C3.82 9.74 4.18 9.38 4.62 9.38H10.07L6.22 5.53C5.91 5.22 5.91 4.71 6.22 4.4C6.53 4.09 7.04 4.09 7.35 4.4L11.2 8.25V2.8C11.2 2.35 11.55 2 12 2Z" transform="translate(640, 1585) scale(3.5)"/>
+      
+      <text x="734" y="1640" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="142" font-weight="400">All Work</text>
+      
+      <!-- Right Asterisk -->
+      <path d="M12 2C12.45 2 12.8 2.35 12.8 2.8V8.25L16.65 4.4C16.96 4.09 17.47 4.09 17.78 4.4C18.09 4.71 18.09 5.22 17.78 5.53L13.93 9.38H19.38C19.82 9.38 20.18 9.74 20.18 10.18C20.18 10.62 19.82 10.98 19.38 10.98H13.93L17.78 14.83C18.09 15.14 18.09 15.65 17.78 15.96C17.47 16.27 16.96 16.27 16.65 15.96L12.8 12.11V17.56C12.8 18 12.45 18.36 12 18.36C11.55 18.36 11.2 18 11.2 17.56V12.11L7.35 15.96C7.04 16.27 6.53 16.27 6.22 15.96C5.91 15.65 5.91 15.14 6.22 14.83L10.07 10.98H4.62C4.18 10.98 3.82 10.62 3.82 10.18C3.82 9.74 4.18 9.38 4.62 9.38H10.07L6.22 5.53C5.91 5.22 5.91 4.71 6.22 4.4C6.53 4.09 7.04 4.09 7.35 4.4L11.2 8.25V2.8C11.2 2.35 11.55 2 12 2Z" transform="translate(1260, 1585) scale(3.5)"/>
+      
+      <!-- Right Image Preview -->
+      <image id="preview-06-img" href="../public/assets/projects/all-archive.jpg" xlink:href="../public/assets/projects/all-archive.jpg" x="1350" y="1525" width="238" height="148" preserveAspectRatio="xMidYMid slice"/>
+    </g>
+  </g>
+</svg>

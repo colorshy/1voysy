@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1193" viewBox="0 0 1920 1193" role="img" aria-label="04 — MANIFESTO (Desktop)">
+  <title>04 — MANIFESTO (Desktop 1920x1193)</title>
+  
+  <rect id="manifesto-bg" width="1920" height="1193" fill="#0E1116"/>
+
+  <!-- Top Metadata Bar -->
+  <g id="manifesto-meta-bar">
+    <text id="manifesto-tag" x="88" y="133" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">[ 04 // MANIFESTO ]</text>
+    <text id="manifesto-meta-labels" x="1485" y="133" fill="rgba(255, 255, 255, 0.4)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="12">LEVEL • ROLLING • MULTI-COLORS • CRAFT</text>
+  </g>
+
+  <!-- Main Headline -->
+  <g id="manifesto-headline" fill="#FFFFFF" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="52" font-weight="400">
+    <text x="88" y="275">Design and code are only tools of expression.</text>
+    <text x="88" y="337">What sets our work apart is thinking.</text>
+    <text x="88" y="399">Crafting bespoke digital-first experiences.</text>
+  </g>
+
+  <!-- 3-Column Swiss Grid -->
+  <!-- Col 1: Philosophy &amp; Talent Note -->
+  <g id="manifesto-col-left">
+    <g id="manifesto-description" fill="rgba(255, 255, 255, 0.64)" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">
+      <text x="88" y="565">Leveraging meticulous craft and strategic foresight, we build</text>
+      <text x="88" y="591">enduring digital platforms that redefine user expectation and</text>
+      <text x="88" y="617">business performance.</text>
+    </g>
+
+    <g id="manifesto-talent-note">
+      <circle id="talent-status-dot" cx="92" cy="708" r="3.5" fill="#CEF023"/>
+      <text id="talent-status-text" x="107" y="713" fill="rgba(255, 255, 255, 0.85)" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">Always looking for top shelf talent.</text>
+    </g>
+  </g>
+
+  <!-- Col 2: 3:4 Character Viewport -->
+  <g id="manifesto-col-center">
+    <g id="manifesto-character-viewport">
+      <rect id="character-viewport-frame" x="760" y="541" width="400" height="533" rx="2" fill="#13171F" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1"/>
+      <image id="manifesto-character-img" href="../public/assets/reference/unit-img-0.png" xlink:href="../public/assets/reference/unit-img-0.png" x="760" y="541" width="400" height="533" preserveAspectRatio="xMidYMid slice"/>
+      <text id="character-tag" x="775" y="1055" fill="rgba(255, 255, 255, 0.72)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11">[ SPECIMEN // 04 ]</text>
+    </g>
+  </g>
+
+  <!-- Col 3: Directory Navigation Links -->
+  <g id="manifesto-col-right" fill="#FFFFFF">
+    <!-- Link 01 -->
+    <g id="dir-link-01">
+      <line x1="1323" y1="549" x2="1832" y2="549" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <text x="1323" y="590" fill="#CEF023" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">[ 01 ]</text>
+      <text x="1370" y="590" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">Capabilities &amp; Stack</text>
+      <text x="1822" y="590" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18">→</text>
+    </g>
+
+    <!-- Link 02 -->
+    <g id="dir-link-02">
+      <line x1="1323" y1="623" x2="1832" y2="623" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <text x="1323" y="664" fill="#CEF023" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">[ 02 ]</text>
+      <text x="1370" y="664" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">Technical Direction</text>
+      <text x="1822" y="664" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18">→</text>
+    </g>
+
+    <!-- Link 03 -->
+    <g id="dir-link-03">
+      <line x1="1323" y1="696" x2="1832" y2="696" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <text x="1323" y="737" fill="#CEF023" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">[ 03 ]</text>
+      <text x="1370" y="737" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">Process &amp; Systems</text>
+      <text x="1822" y="737" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18">→</text>
+    </g>
+
+    <!-- Link 04 -->
+    <g id="dir-link-04">
+      <line x1="1323" y1="769" x2="1832" y2="769" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <line x1="1323" y1="843" x2="1832" y2="843" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <text x="1323" y="810" fill="#CEF023" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="13">[ 04 ]</text>
+      <text x="1370" y="810" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">Creative Inquiry</text>
+      <text x="1822" y="810" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18">→</text>
+    </g>
+  </g>
+</svg>

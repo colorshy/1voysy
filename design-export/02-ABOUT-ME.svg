@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="733" viewBox="0 0 1920 733" role="img" aria-label="02 — ABOUT ME (Desktop)">
+  <title>02 — ABOUT ME (Desktop 1920x733)</title>
+  
+  <!-- Solid White Monolith Background -->
+  <rect id="about-bg" width="1920" height="733" fill="#FFFFFF"/>
+
+  <!-- Left Editorial Column (Asymmetric Swiss Grid) -->
+  <g id="about-copy-column">
+    <g id="about-headline" fill="#1E1E2F" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="62" font-weight="500" letter-spacing="-1.55">
+      <text x="88" y="146">A MULTIDISCIPLINARY</text>
+      <text x="88" y="210">CREATIVE DEVELOPER</text>
+      <text x="88" y="274">BRIDGING CODE</text>
+      <text x="88" y="338">PRECISION WITH BOLD</text>
+      <text x="88" y="402">EDITORIAL DIRECTION.</text>
+    </g>
+
+    <g id="about-manifesto" fill="#65667A" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="400">
+      <text x="88" y="525">Never choosing between emotion and technical depth. Architecting interactive</text>
+      <text x="88" y="557">narratives and intelligent pipelines with obsessive craft.</text>
+    </g>
+  </g>
+
+  <!-- Right Portrait Column (3:4 Vertical Frame) -->
+  <g id="about-portrait-column">
+    <g id="about-portrait-frame">
+      <rect id="portrait-frame-border" x="1412" y="86" width="420" height="560" rx="2" fill="#FAF9F6" stroke="rgba(30, 30, 47, 0.12)" stroke-width="1"/>
+      <image id="about-portrait-img" href="../public/assets/reference/about-me-img-1.png" xlink:href="../public/assets/reference/about-me-img-1.png" x="1413" y="87" width="418" height="558" preserveAspectRatio="xMidYMid slice"/>
+    </g>
+  </g>
+</svg>

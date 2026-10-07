@@ -1,0 +1,616 @@
+/* ========================================================
+   03 — FEATURED WORK SECTION (EDITORIAL PROJECT DIRECTORY)
+   Pure White Minimalist Editorial Surface (#FFFFFF)
+   Monumental Editorial Serif Typography (Cormorant Garamond style)
+   Directional In-Row Previews: Center / Left / Right
+   ======================================================== */
+
+.work-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #FFFFFF;
+  color: #111111;
+  padding: clamp(90px, 11vh, 140px) 0;
+  box-sizing: border-box;
+  overflow-x: clip;
+  z-index: 3;
+}
+
+.work-container {
+  position: relative;
+  width: 100%;
+  max-width: var(--container-max, 1840px);
+  margin: 0 auto;
+  padding-left: var(--page-padding, clamp(24px, 4vw, 64px));
+  padding-right: var(--page-padding, clamp(24px, 4vw, 64px));
+  box-sizing: border-box;
+}
+
+/* --- Section Top Header Label (Bold, Dark, Prominent) --- */
+.work-header {
+  padding-bottom: clamp(24px, 3.2vh, 44px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.work-section-label {
+  font-family: var(--font-sans);
+  font-size: clamp(20px, 1.6vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #000000;
+  text-transform: none;
+}
+
+/* --- Full-Width Directory Rows --- */
+.work-directory {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.work-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(38px, 5.2vh, 72px) 0;
+  border-top: 1px solid #111111;
+  text-decoration: none;
+  color: #111111;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  overflow: visible;
+  /* NO SIBLING DIMMING: All rows remain 100% visible */
+  opacity: 1;
+  transition: color 0.3s var(--ease-out);
+}
+
+.work-row:last-child {
+  border-bottom: 1px solid #111111;
+}
+
+/* Active Row Text Emphasis */
+.work-row:hover .work-row-title,
+.work-row.is-active .work-row-title,
+.work-row:focus-visible .work-row-title {
+  color: #000000;
+}
+
+/* --- Project Title Typography (High-Contrast Locomotive Editorial New Serif) --- */
+.work-row-title {
+  font-family: 'Editorial New', var(--font-serif);
+  font-size: clamp(66px, 8.8vw, 142px);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  color: #111111;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-feature-settings: "kern" 1, "liga" 1;
+  transition: color 0.3s var(--ease-out);
+  will-change: color;
+  white-space: nowrap;
+}
+
+/* Words inside title */
+.work-part {
+  display: inline-block;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Typographic Asterisk on All Work Row */
+.work-asterisk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.52em;
+  height: 0.52em;
+  margin: 0 0.35em;
+  line-height: 1;
+  color: #111111;
+  transition: transform 0.45s var(--ease-out);
+}
+
+.work-row:hover .work-asterisk,
+.work-row.is-active .work-asterisk {
+  transform: rotate(45deg);
+}
+
+/* --- Inline Title Wrap for Left/Right Alignment Anchors --- */
+.work-title-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: auto;
+  overflow: visible;
+}
+
+/* ========================================================
+   DIRECTIONAL IN-ROW IMAGE PREVIEW PLACEHOLDERS
+   1. Auezov Campus: Center
+   2. Noer Coffee: Right (close)
+   3. Re-form: Left (before R)
+   4. FinGuard: Center (between Fin & Guard)
+   5. John Gym: Left (before J)
+   6. All Work: Right (after asterisk)
+   ======================================================== */
+
+.work-preview-box {
+  background-color: #000000;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.work-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.15s ease;
+}
+
+.work-pixel-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 2;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+  transition: opacity 0.15s ease;
+}
+
+/* --- Case 1: CENTER PREVIEW (Auezov Campus & FinGuard) --- */
+.work-row-split .work-row-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-row-split .work-preview-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  height: 1em;
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1), margin 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: visible;
+}
+
+/* Unhovered Slot state */
+[data-project="auezov-campus"] .work-preview-slot {
+  width: 0.3em;
+  margin: 0;
+}
+
+[data-project="finguard"] .work-preview-slot {
+  width: 0;
+  margin: 0;
+}
+
+/* Hovered: Slot expands smoothly in the center */
+.work-row-split:hover .work-preview-slot,
+.work-row-split.is-active .work-preview-slot {
+  width: clamp(170px, 14vw, 240px);
+  margin: 0 clamp(16px, 1.8vw, 28px);
+}
+
+.work-row-split .work-preview-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(170px, 14vw, 240px);
+  aspect-ratio: 16 / 10;
+  opacity: 0;
+  transform: translate(-50%, calc(-50% + 20px));
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.work-row-split:hover .work-preview-box,
+.work-row-split.is-active .work-preview-box {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* Specific styling for Auezov University Logo */
+[data-project="auezov-campus"] .work-preview-box {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+
+[data-project="auezov-campus"] .work-preview-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* Specific styling for Re-form Banner */
+[data-project="reform"] .work-preview-box {
+  background-color: #0b0b0c;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+
+[data-project="reform"] .work-preview-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* Specific styling for FinGuard AI Banner */
+[data-project="finguard"] .work-preview-box {
+  background-color: #0b0b0c;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+
+[data-project="finguard"] .work-preview-img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Case 2: LEFT PREVIEW (Re-form & John Gym) --- */
+.work-row-left .work-preview-box {
+  position: absolute;
+  right: calc(100% + clamp(20px, 2.2vw, 38px));
+  top: 50%;
+  width: clamp(170px, 14vw, 240px);
+  aspect-ratio: 16 / 10;
+  opacity: 0;
+  transform: translateY(calc(-50% + 20px));
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.work-row-left:hover .work-preview-box,
+.work-row-left.is-active .work-preview-box {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+/* --- Case 3: RIGHT PREVIEW (Noir Coffee) --- */
+.work-row-right .work-preview-box {
+  position: absolute;
+  left: calc(100% + clamp(20px, 2.2vw, 38px));
+  top: 50%;
+  width: clamp(170px, 14vw, 240px);
+  aspect-ratio: 16 / 10;
+  opacity: 0;
+  transform: translateY(calc(-50% + 20px));
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.work-row-right:hover .work-preview-box,
+.work-row-right.is-active .work-preview-box {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+/* ========================================================
+   JOHN GYM — ANIMATED QUESTION MARK BADGE
+   ======================================================== */
+[data-project="john-gym"] .work-preview-box {
+  background-color: #0b0b0c;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.question-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif, "Cinzel", "Playfair Display", Georgia, serif);
+  user-select: none;
+  pointer-events: none;
+}
+
+.q-mark-main {
+  font-size: clamp(52px, 4.6vw, 74px);
+  font-weight: 700;
+  font-style: italic;
+  color: #FFFFFF;
+  line-height: 1;
+  transform: scale(0) rotate(-15deg);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+  filter: drop-shadow(0 4px 14px rgba(255, 255, 255, 0.25));
+}
+
+.q-mark-particle {
+  position: absolute;
+  font-weight: 600;
+  font-style: italic;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.25s ease;
+}
+
+.q-p1 {
+  top: 14%;
+  left: 18%;
+  font-size: clamp(20px, 1.8vw, 28px);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.q-p2 {
+  top: 12%;
+  right: 20%;
+  font-size: clamp(24px, 2.2vw, 32px);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.q-p3 {
+  bottom: 15%;
+  left: 20%;
+  font-size: clamp(22px, 2vw, 30px);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.q-p4 {
+  bottom: 14%;
+  right: 18%;
+  font-size: clamp(26px, 2.4vw, 36px);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Hover/Active triggers lively pop-out sequence of question marks */
+[data-project="john-gym"]:hover .q-mark-main,
+[data-project="john-gym"].is-active .q-mark-main {
+  animation: qPopMain 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, qFloatMain 2.2s ease-in-out infinite 0.6s alternate;
+}
+
+[data-project="john-gym"]:hover .q-p1,
+[data-project="john-gym"].is-active .q-p1 {
+  animation: qPopParticle 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s forwards, qFloat1 2.4s ease-in-out infinite 0.6s alternate;
+}
+
+[data-project="john-gym"]:hover .q-p2,
+[data-project="john-gym"].is-active .q-p2 {
+  animation: qPopParticle 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards, qFloat2 2.6s ease-in-out infinite 0.7s alternate;
+}
+
+[data-project="john-gym"]:hover .q-p3,
+[data-project="john-gym"].is-active .q-p3 {
+  animation: qPopParticle 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s forwards, qFloat1 2.3s ease-in-out infinite 0.8s alternate;
+}
+
+[data-project="john-gym"]:hover .q-p4,
+[data-project="john-gym"].is-active .q-p4 {
+  animation: qPopParticle 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s forwards, qFloat2 2.7s ease-in-out infinite 0.9s alternate;
+}
+
+@keyframes qPopMain {
+  0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+  70% { transform: scale(1.22) rotate(4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes qPopParticle {
+  0% { transform: scale(0) rotate(-15deg); opacity: 0; }
+  70% { transform: scale(1.3) rotate(8deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes qFloatMain {
+  0% { transform: scale(1) translateY(0) rotate(0deg); }
+  100% { transform: scale(1.06) translateY(-4px) rotate(3deg); }
+}
+
+@keyframes qFloat1 {
+  0% { transform: scale(1) translateY(0) rotate(-10deg); }
+  100% { transform: scale(1.1) translateY(-6px) rotate(-4deg); }
+}
+
+@keyframes qFloat2 {
+  0% { transform: scale(1) translateY(0) rotate(12deg); }
+  100% { transform: scale(1.08) translateY(6px) rotate(18deg); }
+}
+
+/* ========================================================
+   ALL WORK — 2-SECOND 3D SCATTER / FLIP ON CLICK
+   ======================================================== */
+[data-project="all-work"] {
+  cursor: pointer;
+}
+
+[data-project="all-work"] .work-preview-box {
+  display: none !important;
+}
+
+.work-all-text {
+  display: inline-flex;
+  align-items: baseline;
+  perspective: 1000px;
+}
+
+.all-char {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  backface-visibility: visible;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+  will-change: transform;
+}
+
+.all-char-space {
+  display: inline-block;
+  width: 0.3em;
+}
+
+/* 2-Second Tumbling / Scattered state on click */
+[data-project="all-work"].is-scattered .all-char {
+  transition: transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[data-project="all-work"].is-scattered .all-char[data-char="0"] {
+  transform: translate(-28px, -46px) rotate(180deg) scale(1.1);
+}
+
+[data-project="all-work"].is-scattered .all-char[data-char="1"] {
+  transform: translate(18px, 40px) rotate(-165deg) scale(0.95);
+}
+
+[data-project="all-work"].is-scattered .all-char[data-char="2"] {
+  transform: translate(-12px, -34px) rotate(195deg) scale(1.05);
+}
+
+[data-project="all-work"].is-scattered .all-char[data-char="4"] {
+  transform: translate(26px, 48px) rotate(-180deg) scale(1.14);
+}
+
+[data-project="all-work"].is-scattered .all-char[data-char="5"] {
+  transform: translate(-20px, -50px) rotate(170deg) scale(0.94);
+}
+
+[data-project="all-work"].is-scattered .all-char[data-char="6"] {
+  transform: translate(24px, 35px) rotate(-190deg) scale(1.06);
+}
+
+[data-project="all-work"].is-scattered .all-char[data-char="7"] {
+  transform: translate(-16px, -40px) rotate(185deg) scale(1.1);
+}
+
+[data-project="all-work"].is-scattered .work-asterisk {
+  transform: rotate(540deg) scale(1.4);
+  transition: transform 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Metadata permanently stripped */
+.work-row-meta {
+  display: none !important;
+}
+
+/* ========================================================
+   RESPONSIVE SYSTEMS
+   ======================================================== */
+
+@media (max-width: 1200px) {
+  .work-row-title {
+    font-size: clamp(52px, 7.8vw, 108px);
+  }
+
+  .work-row-left .work-preview-box,
+  .work-row-right .work-preview-box,
+  .work-row-split:hover .work-preview-slot,
+  .work-row-split.is-active .work-preview-slot,
+  .work-row-split .work-preview-box {
+    width: clamp(140px, 13vw, 190px);
+  }
+}
+
+@media (max-width: 900px) {
+  .work-row {
+    padding: clamp(30px, 4vh, 48px) 0;
+  }
+
+  .work-row-title {
+    font-size: clamp(40px, 6.8vw, 76px);
+  }
+
+  .work-row-left .work-preview-box,
+  .work-row-right .work-preview-box,
+  .work-row-split:hover .work-preview-slot,
+  .work-row-split.is-active .work-preview-slot,
+  .work-row-split .work-preview-box {
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-section {
+    padding: clamp(48px, 6.5vh, 68px) 0 clamp(52px, 7vh, 76px);
+  }
+
+  .work-section-label {
+    font-size: 18px;
+  }
+
+  .work-row {
+    padding: clamp(24px, 3.2vh, 36px) 0;
+  }
+
+  .work-row-title {
+    font-size: clamp(30px, 8.4vw, 48px);
+    line-height: 1.1;
+  }
+
+  /* Prevent side overflow on mobile */
+  .work-preview-box {
+    display: none !important;
+  }
+
+  .work-preview-slot {
+    display: inline !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  [data-project="auezov-campus"] .work-preview-slot {
+    display: inline-block !important;
+    width: 0.3em !important;
+  }
+
+  [data-project="finguard"] .work-preview-slot {
+    display: none !important;
+  }
+
+  .work-row-split:hover .work-preview-slot,
+  .work-row-split.is-active .work-preview-slot {
+    width: auto !important;
+    margin: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-row,
+  .work-row-title,
+  .work-asterisk,
+  .work-preview-box,
+  .work-preview-slot {
+    transition: none !important;
+    transform: none !important;
+  }
+}

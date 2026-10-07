@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="994" viewBox="0 0 1920 994" role="img" aria-label="06 — CONTACT (Desktop)">
+  <title>06 — CONTACT (Desktop 1920x994)</title>
+  
+  <defs>
+    <!-- Daylight Sky Gradient -->
+    <linearGradient id="contact-sky-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9EBCE0"/>
+      <stop offset="50%" stop-color="#B8D3F2"/>
+      <stop offset="100%" stop-color="#E2EDF9"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect id="contact-bg" width="1920" height="994" fill="url(#contact-sky-grad)"/>
+
+  <!-- Centered Floating White Contact Card -->
+  <g id="contact-card-container">
+    <rect id="contact-card-bg" x="630" y="157" width="660" height="680" rx="8" fill="#FFFFFF" filter="url(#card-shadow)"/>
+    
+    <!-- Card Header -->
+    <g id="contact-header">
+      <text id="contact-tag" x="685" y="225" fill="rgba(17, 17, 17, 0.6)" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="12">[ 06 // LEAVE YOUR DETAILS ]</text>
+      <text id="contact-title" x="685" y="280" fill="#111111" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="700" letter-spacing="-1">OPEN THE DOOR</text>
+      
+      <g id="contact-direct-inquiry">
+        <text id="direct-label" x="685" y="327" fill="#666666" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">Or just write:</text>
+        <text id="direct-email" x="785" y="327" fill="#111111" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">contact@voy.dev</text>
+        <rect id="copy-btn-border" x="931" y="310" width="78" height="24" rx="2" fill="none" stroke="#111111" stroke-width="1"/>
+        <text id="copy-btn-text" x="946" y="326" fill="#111111" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="10" font-weight="700">[ COPY ]</text>
+      </g>
+    </g>
+
+    <!-- Form Fields Grid -->
+    <g id="contact-form-fields">
+      <!-- Row 1: Name &amp; Email -->
+      <g id="field-name">
+        <text x="685" y="383" fill="#111111" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11" font-weight="600">NAME —</text>
+        <rect x="685" y="395" width="261" height="40" rx="2" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="697" y="420" fill="#999999" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Your full name</text>
+      </g>
+
+      <g id="field-email">
+        <text x="974" y="383" fill="#111111" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11" font-weight="600">EMAIL —</text>
+        <rect x="974" y="395" width="261" height="40" rx="2" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="986" y="420" fill="#999999" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">name@company.com</text>
+      </g>
+
+      <!-- Row 2: Telegram &amp; Reason -->
+      <g id="field-telegram">
+        <text x="685" y="475" fill="#111111" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11" font-weight="600">TELEGRAM / PHONE —</text>
+        <rect x="685" y="487" width="261" height="40" rx="2" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="697" y="512" fill="#999999" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">@handle or +1...</text>
+      </g>
+
+      <g id="field-reason">
+        <text x="974" y="475" fill="#111111" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11" font-weight="600">DISCIPLINE / REASON —</text>
+        <rect x="974" y="487" width="261" height="40" rx="2" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="986" y="512" fill="#111111" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Freelance project / Collab...</text>
+        <path d="M1215 504 L1220 510 L1225 504" fill="none" stroke="#666666" stroke-width="1.5"/>
+      </g>
+
+      <!-- Row 3: Message -->
+      <g id="field-message">
+        <text x="685" y="568" fill="#111111" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="11" font-weight="600">MESSAGE —</text>
+        <rect x="685" y="580" width="550" height="80" rx="2" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+        <text x="697" y="605" fill="#999999" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">A few words about your project or inquiry...</text>
+      </g>
+
+      <!-- Actions Row -->
+      <g id="contact-actions-row">
+        <rect id="submit-btn-bg" x="685" y="696" width="187" height="48" rx="3" fill="#111111"/>
+        <text id="submit-btn-text" x="716" y="726" fill="#FFFFFF" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Send Details →</text>
+        <text id="contact-note" x="685" y="777" fill="#888888" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">No spam. A real reply, usually within 24 hours.</text>
+      </g>
+    </g>
+  </g>
+</svg>

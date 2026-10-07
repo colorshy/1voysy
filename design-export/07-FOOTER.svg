@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="887" viewBox="0 0 1920 887" role="img" aria-label="07 — FOOTER (Desktop)">
+  <title>07 — FOOTER (Desktop 1920x887)</title>
+  
+  <rect id="footer-bg" width="1920" height="887" fill="#FFFFFF"/>
+
+  <!-- Top 3-Column Navigation Grid -->
+  <g id="footer-nav-grid">
+    <!-- Col 01: Menu -->
+    <g id="footer-col-menu">
+      <text id="menu-heading" x="100" y="113" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500">Menu</text>
+      <line id="menu-line" x1="100" y1="127" x2="895" y2="127" stroke="#000000" stroke-width="1"/>
+      
+      <!-- Sub-column Left -->
+      <g id="menu-subcol-left" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">
+        <text x="100" y="167">Work</text>
+        <text x="100" y="200">Agency</text>
+        <text x="100" y="233">Careers</text>
+        <text x="100" y="266">Let's talk</text>
+        <text x="100" y="299">Privacy</text>
+        <text x="100" y="332">Français</text>
+      </g>
+
+      <!-- Sub-column Right -->
+      <g id="menu-subcol-right" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">
+        <text x="534" y="167">Cookie preferences</text>
+        <text x="534" y="200">Newsletter ↓</text>
+      </g>
+    </g>
+
+    <!-- Col 02: Social -->
+    <g id="footer-col-social">
+      <text id="social-heading" x="979" y="113" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500">Social</text>
+      <line id="social-line" x1="979" y1="127" x2="1357" y2="127" stroke="#000000" stroke-width="1"/>
+      <g id="social-links" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">
+        <text x="979" y="167">Instagram</text>
+        <text x="979" y="200">Twitter</text>
+        <text x="979" y="233">LinkedIn</text>
+        <text x="979" y="266">Behance</text>
+        <text x="979" y="299">GitHub</text>
+      </g>
+    </g>
+
+    <!-- Col 03: External -->
+    <g id="footer-col-external">
+      <text id="external-heading" x="1441" y="113" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500">External</text>
+      <line id="external-line" x1="1441" y1="127" x2="1820" y2="127" stroke="#000000" stroke-width="1"/>
+      <g id="external-links" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">
+        <text x="1441" y="167">Store</text>
+        <text x="1441" y="200">Locomotive Scroll</text>
+        <text x="1441" y="233">Annual trips</text>
+        <text x="1441" y="266">Dynasty</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Massive Editorial Lockup (Locomotive Agency Reference) -->
+  <g id="footer-editorial-lockup">
+    <!-- Line 1: Diamond L + 1211 + Coords + Jean-Talon Est + LOCO badge -->
+    <g id="lockup-line-1" transform="translate(100, 480)">
+      <!-- Diamond L -->
+      <g id="glyph-diamond-l">
+        <polygon points="18,2 34,18 18,34 2,18" fill="none" stroke="#000000" stroke-width="1.8" />
+        <text x="18" y="24" text-anchor="middle" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#000000">L</text>
+      </g>
+      
+      <!-- 1211 -->
+      <text id="word-1211" x="69" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">1211</text>
+      
+      <!-- Coordinates Box -->
+      <g id="coords-box" transform="translate(173, 14)">
+        <text x="0" y="10" fill="#000000" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="10">← 45.543660 →</text>
+        <text x="0" y="24" fill="#000000" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="10">→ 73.6110200 ←</text>
+      </g>
+      
+      <!-- Jean-Talon Est -->
+      <text id="word-jean-talon" x="325" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">Jean-Talon Est</text>
+      
+      <!-- LOCO Badge -->
+      <g id="badge-loco" transform="translate(684, 18)">
+        <rect x="0" y="0" width="82" height="26" rx="13" fill="none" stroke="#000000" stroke-width="1.5"/>
+        <text x="12" y="18" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">↗ LOCO</text>
+      </g>
+    </g>
+
+    <!-- Line 2: Montréal + Clover + Square Q + Circle C + , + Canada + Bridge Arrow + H2R 1W1 -->
+    <g id="lockup-line-2" transform="translate(100, 575)">
+      <!-- Montréal -->
+      <text id="word-montreal" x="0" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">Montréal</text>
+      
+      <!-- Clover Glyph -->
+      <g id="glyph-clover" transform="translate(241, 10)" fill="none" stroke="#000000" stroke-width="1.6">
+        <circle cx="20" cy="12" r="6" />
+        <circle cx="28" cy="20" r="6" />
+        <circle cx="20" cy="28" r="6" />
+        <circle cx="12" cy="20" r="6" />
+        <circle cx="20" cy="20" r="3" />
+      </g>
+
+      <!-- Square Q -->
+      <g id="glyph-square-q" transform="translate(324, 12)">
+        <rect x="2" y="2" width="30" height="30" rx="3" fill="none" stroke="#000000" stroke-width="1.8"/>
+        <text x="17" y="23" text-anchor="middle" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#000000">Q</text>
+      </g>
+
+      <!-- Circle C -->
+      <g id="glyph-circle-c" transform="translate(406, 12)">
+        <circle cx="17" cy="17" r="15" fill="none" stroke="#000000" stroke-width="1.8"/>
+        <text x="17" y="23" text-anchor="middle" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#000000">C</text>
+      </g>
+
+      <text id="punct-comma" x="450" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64">,</text>
+      
+      <!-- Canada -->
+      <text id="word-canada" x="486" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">Canada</text>
+      
+      <!-- Bridge Arrow -->
+      <g id="glyph-bridge-arrow" transform="translate(701, 14)" fill="none" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 4 26 C 10 4, 38 4, 44 22" />
+        <polyline points="38 14, 44 22, 48 13" />
+      </g>
+
+      <!-- H2R 1W1 -->
+      <text id="word-postal" x="799" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">H2R 1W1</text>
+    </g>
+
+    <!-- Line 3: Telephone + Phone Box + info + Pill Arrow + locomotive.ca -->
+    <g id="lockup-line-3" transform="translate(100, 672)">
+      <!-- Telephone -->
+      <text id="word-telephone" x="0" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">Telephone</text>
+      
+      <!-- Phone Box -->
+      <g id="phone-box" transform="translate(264, 4)">
+        <rect x="0" y="0" width="124" height="54" fill="none" stroke="#000000" stroke-width="1.5"/>
+        <line x1="56" y1="0" x2="56" y2="54" stroke="#000000" stroke-width="1.5"/>
+        <line x1="56" y1="27" x2="124" y2="27" stroke="#000000" stroke-width="1.5"/>
+        <text x="28" y="36" text-anchor="middle" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="18" font-weight="700" fill="#000000">514</text>
+        <text x="90" y="20" text-anchor="middle" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#000000">524</text>
+        <text x="90" y="46" text-anchor="middle" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#000000">5678</text>
+      </g>
+      
+      <!-- info -->
+      <text id="word-info" x="414" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">info</text>
+      
+      <!-- Loop Pill Arrow -->
+      <g id="glyph-pill-arrow" transform="translate(543, 14)" fill="none" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 20 6 L 50 6 C 58 6, 58 22, 50 22 L 20 22 C 12 22, 12 6, 20 6 Z" />
+        <path d="M 40 22 C 40 30, 26 30, 14 30 L 6 30" />
+        <polyline points="13 25, 6 30, 13 35" />
+      </g>
+
+      <!-- locomotive.ca -->
+      <text id="word-email" x="645" y="44" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="64" font-weight="400">locomotive.ca</text>
+    </g>
+  </g>
+
+  <!-- Bottom Copyright -->
+  <g id="footer-bottom-copyright">
+    <text x="1770" y="825" fill="#666666" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">©2026</text>
+  </g>
+</svg>

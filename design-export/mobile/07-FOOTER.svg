@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="921" viewBox="0 0 390 921" role="img" aria-label="07 — FOOTER (Mobile)">
+  <title>07 — FOOTER (Mobile 390x921)</title>
+  
+  <rect id="footer-bg" width="390" height="921" fill="#FFFFFF"/>
+
+  <!-- Mobile Footer Navigation -->
+  <g id="footer-nav-grid">
+    <!-- Menu -->
+    <g id="footer-col-menu">
+      <text x="20" y="65" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="500">Menu</text>
+      <line x1="20" y1="77" x2="370" y2="77" stroke="#000000" stroke-width="1"/>
+      <g fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">
+        <text x="20" y="105">Work</text>
+        <text x="20" y="131">Agency</text>
+        <text x="20" y="157">Careers</text>
+        <text x="20" y="183">Let's talk</text>
+        <text x="20" y="209">Privacy</text>
+        <text x="20" y="235">Français</text>
+        <text x="20" y="271">Cookie preferences</text>
+        <text x="20" y="297">Newsletter ↓</text>
+      </g>
+    </g>
+
+    <!-- Social -->
+    <g id="footer-col-social">
+      <text x="20" y="354" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="500">Social</text>
+      <line x1="20" y1="366" x2="370" y2="366" stroke="#000000" stroke-width="1"/>
+      <g fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">
+        <text x="20" y="394">Instagram</text>
+        <text x="20" y="420">Twitter</text>
+        <text x="20" y="446">LinkedIn</text>
+        <text x="20" y="472">Behance</text>
+        <text x="20" y="498">GitHub</text>
+      </g>
+    </g>
+
+    <!-- External -->
+    <g id="footer-col-external">
+      <text x="20" y="554" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="500">External</text>
+      <line x1="20" y1="566" x2="370" y2="566" stroke="#000000" stroke-width="1"/>
+      <g fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">
+        <text x="20" y="594">Store</text>
+        <text x="20" y="620">Locomotive Scroll</text>
+        <text x="20" y="646">Annual trips</text>
+        <text x="20" y="672">Dynasty</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Mobile Editorial Lockup -->
+  <g id="footer-editorial-lockup">
+    <!-- Line 1 -->
+    <g id="lockup-line-1" transform="translate(20, 742)">
+      <polygon points="8,1 15,8 8,15 1,8" fill="none" stroke="#000000" stroke-width="1" />
+      <text x="8" y="11" text-anchor="middle" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="600" fill="#000000">L</text>
+      <text x="22" y="15" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">1211</text>
+      <g transform="translate(56, 4)">
+        <text x="0" y="5" fill="#000000" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="5">← 45.543660 →</text>
+        <text x="0" y="11" fill="#000000" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="5">→ 73.6110200 ←</text>
+      </g>
+      <text x="106" y="15" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">Jean-Talon Est</text>
+      <rect x="228" y="4" width="32" height="12" rx="6" fill="none" stroke="#000000" stroke-width="1"/>
+      <text x="233" y="13" fill="#000000" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="700">↗ LOCO</text>
+    </g>
+
+    <!-- Line 2 -->
+    <g id="lockup-line-2" transform="translate(20, 775)">
+      <text x="0" y="16" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">Montréal</text>
+      <!-- Mini Clover -->
+      <circle cx="85" cy="11" r="3" fill="none" stroke="#000000" stroke-width="0.8"/>
+      <circle cx="91" cy="11" r="3" fill="none" stroke="#000000" stroke-width="0.8"/>
+      <!-- Square Q -->
+      <rect x="107" y="3" width="15" height="15" rx="1.5" fill="none" stroke="#000000" stroke-width="1"/>
+      <text x="114.5" y="14" text-anchor="middle" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700">Q</text>
+      <!-- Circle C -->
+      <circle cx="134" cy="10.5" r="7.5" fill="none" stroke="#000000" stroke-width="1"/>
+      <text x="134" y="14" text-anchor="middle" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700">C</text>
+      <text x="145" y="16" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">,</text>
+      <text x="155" y="16" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">Canada</text>
+      <text x="255" y="16" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">H2R 1W1</text>
+    </g>
+
+    <!-- Line 3 -->
+    <g id="lockup-line-3" transform="translate(20, 808)">
+      <text x="0" y="16" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">Telephone</text>
+      <rect x="89" y="0" width="66" height="28" fill="none" stroke="#000000" stroke-width="1"/>
+      <line x1="120" y1="0" x2="120" y2="28" stroke="#000000" stroke-width="1"/>
+      <line x1="120" y1="14" x2="155" y2="14" stroke="#000000" stroke-width="1"/>
+      <text x="105" y="19" text-anchor="middle" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="10" font-weight="700">514</text>
+      <text x="137" y="10" text-anchor="middle" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="8" font-weight="700">524</text>
+      <text x="137" y="24" text-anchor="middle" font-family="'JetBrains Mono', 'Space Mono', 'Courier New', monospace" font-size="8" font-weight="700">5678</text>
+      <text x="162" y="16" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">info</text>
+      <text x="238" y="16" fill="#000000" font-family="'PP Editorial New', 'Editorial New', 'Newsreader', 'Playfair Display', Georgia, serif" font-size="22">locomotive.ca</text>
+    </g>
+  </g>
+
+  <!-- Mobile Copyright -->
+  <g id="footer-bottom-copyright">
+    <text x="20" y="885" fill="#666666" font-family="'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">©2026</text>
+  </g>
+</svg>

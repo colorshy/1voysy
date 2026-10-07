@@ -1,0 +1,26 @@
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  server: {
+    port: 5173,
+    open: false,
+    host: true,
+    cors: true,
+    fs: {
+      strict: true,
+    },
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        careers: resolve(__dirname, 'careers.html'),
+        direction: resolve(__dirname, 'direction.html'),
+      },
+    },
+  },
+});
+

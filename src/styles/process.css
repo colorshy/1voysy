@@ -1,0 +1,136 @@
+/* ========================================================
+   07 — PROCESS SECTION
+   5-Step Editorial Engineering Methodology
+   ======================================================== */
+
+.process-section {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(245, 242, 235, 0.15);
+  position: relative;
+}
+
+.process-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(245, 242, 235, 0.15);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+}
+
+.process-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 8vw, 6.5rem);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--textile-cream-pure, #F5F2EB);
+  text-shadow: 0 2px 14px rgba(10, 28, 18, 0.9);
+}
+
+.process-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(245, 242, 235, 0.75);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.process-step-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  background: rgba(245, 242, 235, 0.04);
+  border: 1px solid rgba(245, 242, 235, 0.14);
+  position: relative;
+  transition: transform var(--duration-fast) var(--ease-out),
+              background-color var(--duration-fast) var(--ease-out),
+              border-color var(--duration-fast) var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .process-step-card:hover {
+    background: rgba(245, 242, 235, 0.08);
+    border-color: rgba(245, 242, 235, 0.35);
+    transform: translateY(-4px);
+  }
+}
+
+.process-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed rgba(245, 242, 235, 0.18);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.process-step-num {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--accent-lime, #CEF023);
+  text-shadow: 0 0 8px rgba(206, 240, 35, 0.5);
+}
+
+.process-step-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(245, 242, 235, 0.4);
+}
+
+.process-step-card:hover .process-step-dot {
+  background: var(--accent-lime, #CEF023);
+  box-shadow: 0 0 6px var(--accent-lime);
+}
+
+.process-step-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--textile-cream-pure, #F5F2EB);
+  margin-bottom: 12px;
+  text-shadow: 0 1px 6px rgba(10, 28, 18, 0.85);
+}
+
+.process-step-desc {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(245, 242, 235, 0.82);
+  text-shadow: 0 1px 4px rgba(10, 28, 18, 0.8);
+}
+
+@media (max-width: 1024px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-step-card:last-child {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-step-card:last-child {
+    grid-column: 1 / 2;
+  }
+}
