@@ -359,6 +359,26 @@ export function initWork() {
       textParts.forEach(part => restoreElement(part));
     }
 
+    // Special click behavior for 05: John Gym (prevent broken jump, pulse question mark particles)
+    if (row.dataset.project === 'john-gym') {
+      const triggerJohnGym = (e) => {
+        if (e) e.preventDefault();
+        const questionStage = row.querySelector('.question-stage');
+        if (questionStage) {
+          questionStage.classList.add('is-clicked');
+          setTimeout(() => questionStage.classList.remove('is-clicked'), 1000);
+        }
+        triggerScramble();
+      };
+
+      row.addEventListener('click', triggerJohnGym);
+      row.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          triggerJohnGym(e);
+        }
+      });
+    }
+
     // Special click behavior for 06: All Work (2-second 3D letter scatter & flip)
     if (row.dataset.project === 'all-work') {
       let isTumbling = false;

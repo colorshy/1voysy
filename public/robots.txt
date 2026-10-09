@@ -1,0 +1,6 @@
+# https://www.1voysy.tech/robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://www.1voysy.tech/sitemap.xml

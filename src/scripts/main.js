@@ -12,6 +12,7 @@
 import '../styles/variables.css';
 import '../styles/grid.css';
 import '../styles/base.css';
+import '../styles/preloader.css';
 import '../styles/navigation.css';
 import '../styles/hero.css';
 import '../styles/about.css';
@@ -21,6 +22,7 @@ import '../styles/contact.css';
 import '../styles/footer.css';
 import '../styles/cursor.css';
 
+import { initPreloader } from './preloader.js';
 import { initNavigation } from './navigation.js';
 import { initContact } from './contact.js';
 import { initHeroMotion } from './hero.js';
@@ -28,6 +30,9 @@ import { initAboutAssetMotion, initAboutScrollReading } from './about.js';
 import { initWork } from './work.js';
 import { initManifestoScene } from './manifesto.js';
 import { initCursor } from './cursor.js';
+
+// Initialize preloader immediately
+initPreloader();
 
 function boot() {
   initCursor();
@@ -47,3 +52,4 @@ if (document.readyState === 'loading') {
 } else {
   boot();
 }
+

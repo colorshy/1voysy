@@ -100,7 +100,7 @@ function renderGrid() {
       <div class="archive-card-visual">
         <img 
           src="${item.image}" 
-          alt="${item.title}" 
+          alt="${item.title} — ${item.category === 'CERTIFICATES' ? 'Official Certificate' : 'Project Showcase'}" 
           class="archive-card-img ${item.fit === 'contain' ? 'fit-contain' : ''}" 
           loading="lazy"
         >

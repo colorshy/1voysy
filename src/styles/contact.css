@@ -27,6 +27,14 @@
   overflow: hidden;
 }
 
+.contact-bg-picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .contact-bg-img {
   width: 100%;
   height: 100%;
