@@ -130,6 +130,18 @@ export function initContact() {
         return;
       }
 
+      const consentInput = document.getElementById('contact-consent');
+      if (consentInput && !consentInput.checked) {
+        showFeedback(
+          feedbackBox,
+          'error',
+          '[ СОГЛАСИЕ ]',
+          'Пожалуйста, подтвердите согласие на обработку персональных данных для отправки формы.'
+        );
+        consentInput.focus();
+        return;
+      }
+
       const payload = {
         name,
         email,

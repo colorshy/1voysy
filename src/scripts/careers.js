@@ -7,7 +7,9 @@ import '../styles/variables.css';
 import '../styles/base.css';
 import '../styles/cursor.css';
 import '../styles/careers.css';
+import '../styles/cookies.css';
 import { initCursor } from './cursor.js';
+import { initCookieConsent } from './cookies.js';
 
 // ========================================================
 // ARCHIVE DATA (The 4 authentic projects + 3 authentic certificates)
@@ -132,6 +134,7 @@ function initPage() {
   initCursor();
   initFilters();
   renderGrid();
+  initCookieConsent();
 
   console.info('⚡ .1VOYSY — Career / Archive Page loaded with works & certificates.');
 }

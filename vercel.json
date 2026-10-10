@@ -9,6 +9,10 @@
     {
       "source": "/direction",
       "destination": "/direction.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
     }
   ],
   "headers": [

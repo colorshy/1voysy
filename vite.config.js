@@ -20,6 +20,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         careers: resolve(__dirname, 'careers.html'),
         direction: resolve(__dirname, 'direction.html'),
+        privacy: resolve(__dirname, 'privacy.html'),
       },
     },
   },

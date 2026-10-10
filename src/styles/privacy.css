@@ -1,0 +1,306 @@
+/* ========================================================
+   .1VOYSY — Privacy & Legal Policy Stylesheet
+   Editorial Monolith Aesthetics, Typographic Focus
+   ======================================================== */
+
+.privacy-page {
+  background-color: var(--color-bg, #0B0D10);
+  color: var(--color-text, #E2E8F0);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.privacy-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11, 13, 16, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.privacy-brand-wrap {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.privacy-brand-title {
+  font-family: var(--font-display, 'PP Editorial New', serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.privacy-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.privacy-back-btn,
+.privacy-connect-btn {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.privacy-back-btn {
+  color: #94A3B8;
+}
+
+.privacy-back-btn:hover {
+  color: #FFFFFF;
+}
+
+.privacy-connect-btn {
+  padding: 0.5rem 0.85rem;
+  background: #FFFFFF;
+  color: #000000;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.privacy-connect-btn:hover {
+  background: #CBD5E1;
+}
+
+/* Main Container */
+.privacy-main {
+  flex: 1;
+  padding: 4rem 1.5rem 6rem;
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.privacy-hero-grid {
+  margin-bottom: 3.5rem;
+}
+
+.privacy-tag {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #A0AEC0;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.privacy-headline {
+  font-family: var(--font-display, 'PP Editorial New', 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin: 0 0 1.25rem;
+}
+
+.privacy-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.75rem;
+  color: #94A3B8;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.privacy-meta-item strong {
+  color: #CBD5E1;
+}
+
+/* Document Content Body */
+.privacy-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  color: #CBD5E1;
+}
+
+.privacy-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.privacy-section h2 {
+  font-family: var(--font-display, 'PP Editorial New', 'Cormorant Garamond', Georgia, serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.privacy-section h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.privacy-section p {
+  margin: 0;
+}
+
+.privacy-section ul,
+.privacy-section ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.privacy-section li {
+  color: #CBD5E1;
+}
+
+.privacy-callout {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 2px solid #FFFFFF;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 4px 4px 0;
+  margin: 0.75rem 0;
+}
+
+.privacy-callout-warning {
+  border-left-color: #F6AD55;
+  background: rgba(246, 173, 85, 0.05);
+}
+
+.privacy-callout-tag {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #CBD5E1;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.needs-input-badge {
+  display: inline-block;
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.7rem;
+  background: rgba(237, 137, 54, 0.15);
+  color: #F6AD55;
+  border: 1px solid rgba(237, 137, 54, 0.3);
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.privacy-action-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.25rem 1.5rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.privacy-action-box p {
+  font-size: 0.875rem;
+  color: #E2E8F0;
+}
+
+/* Footer */
+.privacy-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.5rem 2rem;
+  background: #080A0D;
+}
+
+.privacy-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.privacy-footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.privacy-footer-brand {
+  font-family: var(--font-display, 'PP Editorial New', serif);
+  font-size: 1.25rem;
+  color: #FFFFFF;
+}
+
+.privacy-footer-sub {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.7rem;
+  color: #718096;
+}
+
+.privacy-footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.privacy-footer-link {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 0.75rem;
+  color: #A0AEC0;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.privacy-footer-link:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 640px) {
+  .privacy-header {
+    padding: 1rem;
+  }
+  .privacy-main {
+    padding: 2.5rem 1rem 4rem;
+  }
+  .privacy-action-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .privacy-action-box button {
+    width: 100%;
+  }
+}

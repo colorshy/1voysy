@@ -21,6 +21,7 @@ import '../styles/unit.css';
 import '../styles/contact.css';
 import '../styles/footer.css';
 import '../styles/cursor.css';
+import '../styles/cookies.css';
 
 import { initPreloader } from './preloader.js';
 import { initNavigation } from './navigation.js';
@@ -30,6 +31,7 @@ import { initAboutAssetMotion, initAboutScrollReading } from './about.js';
 import { initWork } from './work.js';
 import { initManifestoScene } from './manifesto.js';
 import { initCursor } from './cursor.js';
+import { initCookieConsent } from './cookies.js';
 
 // Initialize preloader immediately
 initPreloader();
@@ -43,6 +45,7 @@ function boot() {
   initWork();
   initManifestoScene();
   initContact();
+  initCookieConsent();
 
   console.info('⚡ .1VOYSY — Six-Section Portfolio initialized.');
 }

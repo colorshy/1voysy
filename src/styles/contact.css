@@ -253,6 +253,85 @@
   font-size: 14px;
 }
 
+/* Consent Checkbox Wrap (RK Law on Personal Data Compliance) */
+.form-consent-wrap {
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.consent-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.consent-checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.consent-custom-box {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  border: 1px solid rgba(30, 30, 47, 0.4);
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.consent-custom-box::after {
+  content: "";
+  display: none;
+  width: 5px;
+  height: 9px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.consent-checkbox-label input[type="checkbox"]:checked + .consent-custom-box {
+  background-color: #111111;
+  border-color: #111111;
+}
+
+.consent-checkbox-label input[type="checkbox"]:checked + .consent-custom-box::after {
+  display: block;
+}
+
+.consent-checkbox-label input[type="checkbox"]:focus-visible + .consent-custom-box {
+  outline: 2px solid #111111;
+  outline-offset: 2px;
+}
+
+.consent-text {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: clamp(12px, 0.85vw, 13px);
+  line-height: 1.5;
+  color: var(--graphite, #1E1E2F);
+}
+
+.consent-link {
+  color: #111111;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.consent-link:hover {
+  opacity: 0.75;
+}
+
 /* Actions Row */
 .contact-actions-row {
   display: flex;

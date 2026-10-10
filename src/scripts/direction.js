@@ -7,7 +7,9 @@ import '../styles/variables.css';
 import '../styles/base.css';
 import '../styles/cursor.css';
 import '../styles/direction.css';
+import '../styles/cookies.css';
 import { initCursor } from './cursor.js';
+import { initCookieConsent } from './cookies.js';
 
 function initDirectionList() {
   const list = document.getElementById('directions-list');
@@ -54,6 +56,7 @@ function initDirectionList() {
 function initPage() {
   initCursor();
   initDirectionList();
+  initCookieConsent();
 
   console.info('⚡ .1VOYSY — Direction Page initialized.');
 }
